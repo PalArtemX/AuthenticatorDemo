@@ -57,5 +57,18 @@ class AuthenticationViewModel: ObservableObject {
         }
     }
     
+    // MARK: - fictitious authentication
+    func authenticateWithCredentials(username: String, password: String) {
+        if username.lowercased() == "artem" && password == "123456" {
+            isAuthenticated = true
+        } else {
+            errorDescription = "Wrong credentials"
+            showAlert = true
+        }
+    }
     
+    // MARK: logout
+    func logout() {
+        isAuthenticated = false
+    }
 }

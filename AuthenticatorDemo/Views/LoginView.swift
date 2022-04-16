@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject var authenticationVN: AuthenticationViewModel
+    @State private var showSheet = false
     
     var body: some View {
         ZStack {
@@ -40,6 +41,12 @@ struct LoginView: View {
                         }
                 default:
                     PrimaryButtonView(image: "person", text: "Login with your credentials")
+                        .onTapGesture {
+                            showSheet.toggle()
+                        }
+                        .sheet(isPresented: $showSheet) {
+                            CredentialsLoginView()
+                        }
                 }
             }
         }

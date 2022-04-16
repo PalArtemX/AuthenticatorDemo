@@ -12,7 +12,21 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            LoginView()
+            if authenticationVN.isAuthenticated {
+                VStack {
+                    TitleView()
+                    Text("Welcome!")
+                    Button("Logout") {
+                        authenticationVN.logout()
+                    }
+                    .padding(.horizontal)
+                    .buttonStyle(.bordered)
+                    .foregroundColor(.red)
+                }
+            } else {
+                LoginView()
+            }
+            
         }
         .alert(isPresented: $authenticationVN.showAlert) {
             Alert(title: Text("Error"), message: Text(authenticationVN.errorDescription ?? "Error trying to login with credentials, please try again"), dismissButton: .default(Text("OK")))

@@ -16,6 +16,7 @@
 		F83E62AF280AD28600CB00AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62AE280AD28600CB00AC /* LoginView.swift */; };
 		F83E62B1280AD38000CB00AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62B0280AD38000CB00AC /* HomeView.swift */; };
 		F83E62B3280AD3F500CB00AC /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62B2280AD3F500CB00AC /* AuthenticationViewModel.swift */; };
+		F83E62B5280ADFE100CB00AC /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62B4280ADFE100CB00AC /* CredentialsLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F83E62AE280AD28600CB00AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F83E62B0280AD38000CB00AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F83E62B2280AD3F500CB00AC /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		F83E62B4280ADFE100CB00AC /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				F83E62B0280AD38000CB00AC /* HomeView.swift */,
 				F83E62AE280AD28600CB00AC /* LoginView.swift */,
+				F83E62B4280ADFE100CB00AC /* CredentialsLoginView.swift */,
 				F83E62A9280AD00900CB00AC /* Components */,
 			);
 			path = Views;
@@ -199,6 +202,7 @@
 				F83E62AD280AD13A00CB00AC /* PrimaryButtonView.swift in Sources */,
 				F83E62A8280ACFAC00CB00AC /* Color.swift in Sources */,
 				F83E62AB280AD02700CB00AC /* TitleView.swift in Sources */,
+				F83E62B5280ADFE100CB00AC /* CredentialsLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
