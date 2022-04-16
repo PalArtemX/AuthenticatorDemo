@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F83E6296280ACF2F00CB00AC /* AuthenticatorDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E6295280ACF2F00CB00AC /* AuthenticatorDemoApp.swift */; };
-		F83E6298280ACF2F00CB00AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E6297280ACF2F00CB00AC /* ContentView.swift */; };
 		F83E629A280ACF2F00CB00AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83E6299280ACF2F00CB00AC /* Assets.xcassets */; };
 		F83E629D280ACF2F00CB00AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83E629C280ACF2F00CB00AC /* Preview Assets.xcassets */; };
+		F83E62A8280ACFAC00CB00AC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62A7280ACFAC00CB00AC /* Color.swift */; };
+		F83E62AB280AD02700CB00AC /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62AA280AD02700CB00AC /* TitleView.swift */; };
+		F83E62AD280AD13A00CB00AC /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62AC280AD13A00CB00AC /* PrimaryButtonView.swift */; };
+		F83E62AF280AD28600CB00AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62AE280AD28600CB00AC /* LoginView.swift */; };
+		F83E62B1280AD38000CB00AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62B0280AD38000CB00AC /* HomeView.swift */; };
+		F83E62B3280AD3F500CB00AC /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E62B2280AD3F500CB00AC /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F83E6292280ACF2F00CB00AC /* AuthenticatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83E6295280ACF2F00CB00AC /* AuthenticatorDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorDemoApp.swift; sourceTree = "<group>"; };
-		F83E6297280ACF2F00CB00AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F83E6299280ACF2F00CB00AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F83E629C280ACF2F00CB00AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F83E62A7280ACFAC00CB00AC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F83E62AA280AD02700CB00AC /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		F83E62AC280AD13A00CB00AC /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
+		F83E62AE280AD28600CB00AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F83E62B0280AD38000CB00AC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F83E62B2280AD3F500CB00AC /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				F83E6295280ACF2F00CB00AC /* AuthenticatorDemoApp.swift */,
-				F83E6297280ACF2F00CB00AC /* ContentView.swift */,
+				F83E62A5280ACF5100CB00AC /* Views */,
+				F83E62A4280ACF4B00CB00AC /* ViewModels */,
+				F83E62A3280ACF4300CB00AC /* Models */,
+				F83E62A6280ACF7B00CB00AC /* Extensions */,
 				F83E6299280ACF2F00CB00AC /* Assets.xcassets */,
 				F83E629B280ACF2F00CB00AC /* Preview Content */,
 			);
@@ -65,6 +78,48 @@
 				F83E629C280ACF2F00CB00AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F83E62A3280ACF4300CB00AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F83E62A4280ACF4B00CB00AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F83E62B2280AD3F500CB00AC /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F83E62A5280ACF5100CB00AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F83E62B0280AD38000CB00AC /* HomeView.swift */,
+				F83E62AE280AD28600CB00AC /* LoginView.swift */,
+				F83E62A9280AD00900CB00AC /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F83E62A6280ACF7B00CB00AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F83E62A7280ACFAC00CB00AC /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F83E62A9280AD00900CB00AC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F83E62AA280AD02700CB00AC /* TitleView.swift */,
+				F83E62AC280AD13A00CB00AC /* PrimaryButtonView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F83E6298280ACF2F00CB00AC /* ContentView.swift in Sources */,
+				F83E62AF280AD28600CB00AC /* LoginView.swift in Sources */,
+				F83E62B1280AD38000CB00AC /* HomeView.swift in Sources */,
+				F83E62B3280AD3F500CB00AC /* AuthenticationViewModel.swift in Sources */,
 				F83E6296280ACF2F00CB00AC /* AuthenticatorDemoApp.swift in Sources */,
+				F83E62AD280AD13A00CB00AC /* PrimaryButtonView.swift in Sources */,
+				F83E62A8280ACFAC00CB00AC /* Color.swift in Sources */,
+				F83E62AB280AD02700CB00AC /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +330,7 @@
 				DEVELOPMENT_TEAM = H5J3S6F67R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +360,7 @@
 				DEVELOPMENT_TEAM = H5J3S6F67R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
