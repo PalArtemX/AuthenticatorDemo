@@ -21,14 +21,30 @@ struct LoginView: View {
                 TitleView()
                 
                 // MARK: - Button
-                PrimaryButtonView(image: "faceid", text: "Login with FaceID")
-                
-                
+                switch authenticationVN.biometryType {
+                case .faceID:
+                    PrimaryButtonView(image: "faceid", text: "Login with FaceID")
+                        .onTapGesture {
+                            Task.init {
+                                await authenticationVN.authenticateWithBiometrics()
+                            }
+                            
+                        }
+                case .touchID:
+                    PrimaryButtonView(image: "touchid", text: "Login with TouchID")
+                        .onTapGesture {
+                            Task.init {
+                                await authenticationVN.authenticateWithBiometrics()
+                            }
+                            
+                        }
+                default:
+                    PrimaryButtonView(image: "person", text: "Login with your credentials")
+                }
             }
         }
     }
 }
-
 
 
 

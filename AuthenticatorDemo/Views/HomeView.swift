@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var authenticationVN: AuthenticationViewModel
+    
     var body: some View {
         VStack {
             LoginView()
+        }
+        .alert(isPresented: $authenticationVN.showAlert) {
+            Alert(title: Text("Error"), message: Text(authenticationVN.errorDescription ?? "Error trying to login with credentials, please try again"), dismissButton: .default(Text("OK")))
         }
     }
 }
@@ -27,5 +32,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(AuthenticationViewModel())
     }
 }
